@@ -25,5 +25,13 @@ peerDependencyRules:
   allowedVersions:
     vite: "*"
     vitest: "*"
+# stockfish's postinstall only symlinks its "full" build's generic filename — the exact
+# lite-single files our own scripts/setup-engine.mjs copies ship pre-built in the package,
+# so it's safe to skip. This must be explicit (not just a local warning) or a clean install
+# under --frozen-lockfile (e.g. on Vercel) fails with ERR_PNPM_IGNORED_BUILDS.
+# stockfish's postinstall only symlinks its "full" build's generic filename — the exact
+# lite-single files our own scripts/setup-engine.mjs copies ship pre-built in the package,
+# so it's safe to allow. This must be resolved explicitly here or a clean install under
+# --frozen-lockfile (e.g. on Vercel) fails with ERR_PNPM_IGNORED_BUILDS.
 allowBuilds:
-  stockfish: set this to true or false
+  stockfish: true
