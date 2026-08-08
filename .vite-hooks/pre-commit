@@ -1,1 +1,4 @@
+# Block commits that introduce non-kebab-case filenames.
+node scripts/check-kebab-case.mjs || exit 1
+
 vp staged

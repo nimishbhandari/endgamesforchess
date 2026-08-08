@@ -1,0 +1,19 @@
+{
+  "name": "Endgames for Chess",
+  "short_name": "Endgames",
+  "description": "Learn and drill chess endgames against Stockfish, graded by perfect tablebase play.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#1a1a18",
+  "theme_color": "#1a1a18",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

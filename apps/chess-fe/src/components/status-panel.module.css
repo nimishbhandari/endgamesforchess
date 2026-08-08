@@ -1,0 +1,37 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 12rem;
+}
+
+.status {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.controls button {
+  min-height: 44px; /* comfortable touch target */
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: inherit;
+  background: rgba(127, 127, 127, 0.14);
+  border: 1px solid rgba(127, 127, 127, 0.28);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: rgba(127, 127, 127, 0.24);
+}
+
+.controls button:active {
+  transform: translateY(1px);
+}

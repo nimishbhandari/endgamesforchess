@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Stockfish engine binaries — vendored from node_modules at dev/build time
+# (see scripts/setup-engine.mjs), never committed.
+public/stockfish/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

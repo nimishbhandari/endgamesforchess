@@ -1,0 +1,65 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 13rem;
+  max-width: 20rem;
+}
+
+.name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.grade {
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  background: rgba(127, 127, 127, 0.12);
+}
+
+.best {
+  color: #2e7d32;
+}
+.good {
+  color: #1565c0;
+}
+.inaccuracy {
+  color: #ef6c00;
+}
+.blunder {
+  color: #c62828;
+}
+
+.outcome {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.status {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  min-height: 1.2em;
+}
+
+.restart {
+  align-self: flex-start;
+  min-height: 44px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: inherit;
+  background: rgba(127, 127, 127, 0.14);
+  border: 1px solid rgba(127, 127, 127, 0.28);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.restart:hover {
+  background: rgba(127, 127, 127, 0.24);
+}

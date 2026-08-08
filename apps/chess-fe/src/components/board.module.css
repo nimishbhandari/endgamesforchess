@@ -1,0 +1,8 @@
+/* Responsive square board: fills the smaller of available width / viewport height,
+   capped so it stays comfortable on large screens. react-chessboard fills this box. */
+.board {
+  width: min(92vw, 78vh, 640px);
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  touch-action: manipulation; /* snappier taps on mobile, no double-tap zoom */
+}

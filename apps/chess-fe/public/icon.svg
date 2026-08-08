@@ -1,0 +1,11 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Endgames for Chess">
+  <rect width="512" height="512" rx="96" fill="#3b7dd8" />
+  <g fill="#ffffff">
+    <rect x="150" y="150" width="212" height="70" />
+    <rect x="196" y="150" width="34" height="36" fill="#3b7dd8" />
+    <rect x="282" y="150" width="34" height="36" fill="#3b7dd8" />
+    <rect x="180" y="220" width="152" height="110" />
+    <polygon points="180,330 332,330 372,414 140,414" />
+    <rect x="140" y="414" width="232" height="52" rx="10" />
+  </g>
+</svg>

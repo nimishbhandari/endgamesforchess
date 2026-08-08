@@ -1,0 +1,29 @@
+.picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.button,
+.active {
+  min-height: 44px;
+  padding: 0 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: inherit;
+  border-radius: 999px;
+  border: 1px solid rgba(127, 127, 127, 0.32);
+  background: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgba(127, 127, 127, 0.14);
+}
+
+.active {
+  background: #3b7dd8;
+  border-color: #3b7dd8;
+  color: #fff;
+}

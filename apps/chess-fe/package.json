@@ -4,14 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node scripts/setup-engine.mjs",
     "dev": "vp dev",
+    "prebuild": "node scripts/setup-engine.mjs",
     "build": "tsc -b && vp build",
     "lint": "vp lint",
+    "test": "vp test",
     "preview": "vp preview"
   },
   "dependencies": {
+    "chess.js": "catalog:",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-chessboard": "catalog:",
+    "react-dom": "^19.2.7",
+    "stockfish": "catalog:"
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
