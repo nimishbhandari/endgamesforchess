@@ -107,3 +107,24 @@ This repo enforces small, readable files (see [`CLAUDE.md`](CLAUDE.md)):
 
 Cross-platform plan: web-first → PWA → Capacitor wrap for App Store / Play Store — one codebase
 throughout.
+
+## Known issues
+
+#### 1. No way to load a custom FEN in Free Play
+
+`useChessGame.loadFen()` exists ([hooks/use-chess-game.ts](apps/chess-fe/src/hooks/use-chess-game.ts))
+but no UI calls it, so the tablebase panel is only reachable by playing a game down manually.
+
+#### 2. `skillLevel` is fully wired but never used
+
+Stockfish's difficulty option works end-to-end, but no caller
+([free-play.tsx](apps/chess-fe/src/components/free-play.tsx),
+[use-drill.ts](apps/chess-fe/src/hooks/use-drill.ts)) ever passes a value — always full strength.
+
+#### 3. Move grading only works ≤ 7 pieces
+
+`gradeMove()` ([drills/grade.ts](apps/chess-fe/src/drills/grade.ts)) needs a tablebase result, so
+any position with more pieces can't be graded at all.
+
+This is an open-source effort — if you'd like to contribute, these are good first bugs to try
+fixing. 😊
